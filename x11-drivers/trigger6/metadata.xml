@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>25772781+nvaert1986@users.noreply.github.com</email>
+	</maintainer>
+	<longdescription lang="en">
+		Out-of-tree DRM/KMS kernel driver for the MCT "T6 USB Station"
+		chipset, as in the StarTech USB32HDES USB 3.0 to HDMI adapter (USB ID
+		0711:5601): display up to 1920x1200 at 60 Hz, hardware cursor, gamma
+		table and HDMI audio as an ALSA sound card.
+
+		This package builds the module from source with linux-mod-r1 (signed
+		when the kernel's module signing is set up) and also installs the
+		trigger6-fast helper, which converts the desktop picture to NV12
+		with libyuv for about 60 instead of 29 frames per second, plus the
+		udev rule and the systemd user service that start it when the
+		adapter appears.
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/nvaert1986/trigger6-kernel-module/issues</bugs-to>
+		<remote-id type="github">nvaert1986/trigger6-kernel-module</remote-id>
+	</upstream>
+</pkgmetadata>
