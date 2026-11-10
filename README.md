@@ -14,7 +14,7 @@ trigger6-overlay/
 ├── metadata/layout.conf
 ├── profiles/{repo_name,categories}
 └── x11-drivers/trigger6/
-    ├── trigger6-1.1.0.ebuild
+    ├── trigger6-1.2.0.ebuild
     └── metadata.xml · Manifest
 ```
 
